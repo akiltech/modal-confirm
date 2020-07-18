@@ -32,16 +32,12 @@ export interface ConfirmInterface {
     btnYes?: string;
     btnNo?: string;
 }
-
-// @dynamic
+/**
+ * Confirm dialog class
+ */
 export class ConfirmDialogClass {
-    private static instance: ConfirmDialogClass;
     constructor(data: ConfirmInterface) {
         Object.assign(this, data);
-    }
-
-    static getInstance(input: ConfirmInterface): ConfirmDialogClass {
-        return this.instance || (this.instance = new this(input));
     }
 }
 

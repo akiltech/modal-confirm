@@ -10,8 +10,7 @@ export class InjectedComponent implements OnInit {
 
   constructor(private dialogService: ModalConfirmService) { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   closeDialog() {
     this.dialogService.closeAllDialog();

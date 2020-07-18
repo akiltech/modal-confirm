@@ -29,7 +29,7 @@ export class ModalConfirmService {
    * @returns dialog
    */
   private loadConfirmDialog(value?: ConfirmInterface, dialogOptions?: OptionsInterface): Observable<any> {
-    const dialogData: ConfirmDialogClass = ConfirmDialogClass.getInstance(value);
+    const dialogData: ConfirmDialogClass = new ConfirmDialogClass(value);
 
     const dialogRef = this.dialog.open(ModalConfirmComponent, {
       width: !!dialogOptions && !!dialogOptions.size ? `${dialogOptions.size}px` : '400px',
