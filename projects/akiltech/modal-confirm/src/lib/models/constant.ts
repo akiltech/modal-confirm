@@ -2,7 +2,7 @@
  * Akil library modal constants
  *
  * @author Anzoumana SANOGO <dev.sanogo@gmail.com>
- * @version 0.0.1
+ * @version 0.0.9
  */
 
 import { CONFIRMATION_TYPE } from './confirm-dialog';

@@ -2,7 +2,7 @@
  * Akil library modules
  *
  * @author Anzoumana SANOGO <dev.sanogo@gmail.com>
- * @version 0.0.1
+ * @version 0.0.9
  */
 
 import { NgModule } from '@angular/core';
