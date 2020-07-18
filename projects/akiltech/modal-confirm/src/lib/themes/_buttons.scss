@@ -1,0 +1,93 @@
+/* Custom buttons for current modal component */
+
+// Success btn
+.btn-add-success {
+  color: $white;
+  background-color: $green;
+
+  &:hover {
+    color: $white;
+    background-color: darken($green, 10%);
+  }
+}
+
+// Success outline btn
+.btn-add-success-outline {
+  color: $green;
+  background-color: none;
+  border: 1px solid $green;
+
+  &:hover {
+    color: $white;
+    background-color: darken($green, 10%);
+  }
+}
+
+// Danger btn
+.btn-add-danger {
+  color: $white;
+  background-color: $red;
+  
+  &:hover {
+    color: $white;
+    background-color: darken($red, 10%);
+  }
+}
+
+// Danger outline btn
+.btn-add-danger-outline {
+  color: $red;
+  background-color: none;
+  border: 1px solid $red;
+
+  &:hover {
+    color: $white;
+    background-color: darken($red, 10%);
+  }
+}
+
+// Warning btn
+.btn-add-warning {
+  color: $white;
+  background-color: $warning;
+
+  &:hover {
+    color: $white;
+    background-color: darken($warning, 10%);
+  }
+}
+
+// Warning outline btn
+.btn-add-warning-outline {
+  color: $warning;
+  background-color: none;
+  border: 1px solid $warning;
+
+  &:hover {
+    color: $white;
+    background-color: darken($warning, 10%);
+  }
+}
+
+// Default btn
+.btn-add-default {
+  color: $white;
+  background-color: $info;
+
+  &:hover {
+    color: $white;
+    background-color: darken($info, 10%);
+  }
+}
+
+// Warning outline btn
+.btn-add-default-outline {
+  color: $info;
+  background-color: none;
+  border: 1px solid $info;
+
+  &:hover {
+    color: $white;
+    background-color: darken($info, 10%);
+  }
+}

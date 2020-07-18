@@ -1,0 +1,18 @@
+/* Define variables that can be used in library */
+
+// Colors
+$white: #ffffff;
+$blue: #44acda;
+$red: #dc3545;
+$orange: #f28d45;
+$warning: #ffc107;
+$yellow: #ffed4a;
+$green: #28a745;
+$info: #17a2b8;
+
+// Default colors
+$primary: $blue !default;
+$danger: $red !default;
+$warning: $yellow !default;
+$success: $green !default;
+$default: $info !default;

@@ -1,0 +1,61 @@
+/* Dialog component main styles */
+
+@import "../../themes/lib";
+
+.mat-dialog-container {
+    padding: 0 !important;
+    background: none !important;
+    
+    .card {
+        border: none;
+    
+        .card-header {
+            height: 45px;
+        
+            h4 {
+                font-size: 12px;
+            }
+        }
+        
+        .card-body {
+            font-size: 12px;
+        
+            .mat-dialog-content {
+                bottom: 3px;
+                position: relative;
+    
+                ::-webkit-scrollbar {
+                    display: none !important;
+                }
+              
+                ::-moz-scrollbar {
+                    display: none !important;
+                }
+    
+                i {
+                    font-size: 55px;
+                }
+    
+                .body-section {
+                    article {
+                        bottom: 7px;
+                        position: relative;
+                    }
+                }
+            }
+        }
+        
+        .card-footer {
+            height: 50px;
+
+            button {
+                font-size: 11px;
+                padding: 5px 10px;
+                font-weight: 600;
+                border-radius: 0;
+                outline: 0 !important;
+                box-shadow: none !important;
+            }
+        }
+    } 
+}

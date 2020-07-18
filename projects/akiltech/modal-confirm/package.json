@@ -1,0 +1,38 @@
+{
+  "name": "@akiltech/modal-confirm",
+  "version": "0.0.8",
+  "peerDependencies": {
+    "@angular/common": "^8.2.14",
+    "@angular/core": "^8.2.14"
+  },
+  "author": {
+    "name": "Akil technologies"
+  },
+  "maintainers": [
+    {
+      "name": "Anzoumana SANOGO",
+      "email": "dev.sanogo@gmail.com",
+      "url": "https://github.com/devsanogo"
+    }
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://www.opensource.org/licenses/mit-license.php"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Anzoumana SANOGO",
+      "email": "dev.sanogo@gmail.com",
+      "url": "https://github.com/devsanogo"
+    }
+  ],
+  "keywords": [
+    "modal", 
+    "dialog", 
+    "material dialog", 
+    "reusable dialog",
+    "customizable dialog"
+  ]
+}
