@@ -193,4 +193,4 @@ import { ModalConfirmModule } from '@akiltech/modal-confirm';
 export class AppModule { }
 ```
 
-- If you decide to inject component, you can't use `bodyText` parameter again
+- If you decide to inject component, you can't use `bodyText` parameter again.
