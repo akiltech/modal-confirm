@@ -2,7 +2,7 @@
  * Akil library modal service
  *
  * @author Anzoumana SANOGO <dev.sanogo@gmail.com>
- * @version 0.0.12
+ * License: MIT
  */
 
 import { Injectable } from '@angular/core';
