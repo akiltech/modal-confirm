@@ -2,7 +2,7 @@
  * Akil library modal types [enum, class, interfaces]
  *
  * @author Anzoumana SANOGO <dev.sanogo@gmail.com>
- * @version 0.0.10
+ * @version 0.0.11
  */
 
 import { Type } from '@angular/core';
