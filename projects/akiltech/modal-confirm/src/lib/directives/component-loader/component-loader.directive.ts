@@ -2,7 +2,7 @@
  * Dynamic component loader directive
  *
  * @author Anzoumana SANOGO <dev.sanogo@gmail.com>
- * @version 0.0.11
+ * @version 0.0.12
  */
 
 import { Directive, ViewContainerRef } from '@angular/core';

@@ -198,16 +198,21 @@ export class AppModule { }
 ### Screenshot
 
 - Success modal dialog
+
 ![Success modal dialog](https://github.com/devsanogo/modal-confirm/blob/master/projects/modal-test/src/assets/screenshots/Success-dialog.png)
 
 - Danger Modal dialog
+
 ![Danger modal dialog](https://github.com/devsanogo/modal-confirm/blob/master/projects/modal-test/src/assets/screenshots/Danger-dialog.png)
 
 - Warning modal dialog
+
 ![Warning modal dialog](https://github.com/devsanogo/modal-confirm/blob/master/projects/modal-test/src/assets/screenshots/Warning-dialog.png)
 
 - Default modal dialog
+
 ![Default modal dialog](https://github.com/devsanogo/modal-confirm/blob/master/projects/modal-test/src/assets/screenshots/Default-dialog.png)
 
 - Modal dialog with injected component
+
 ![Modal dialog with component](https://github.com/devsanogo/modal-confirm/blob/master/projects/modal-test/src/assets/screenshots/Dialog-with-component.png)
