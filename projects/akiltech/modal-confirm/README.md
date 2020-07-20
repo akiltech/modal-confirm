@@ -21,6 +21,10 @@ you must install these two libraries for the application to work properly `@angu
 $ ng add @angular/material
 ```
 
+##### Notice for `@angular/material` set up
+
+So that library work properly, you must install a version lower than version 9. for example `yarn add @angular/material@^8.x`
+
 #### BOOTSTRAP
 ```sh
 $ npm install bootstrap
