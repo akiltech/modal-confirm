@@ -20,7 +20,7 @@ export class ModalConfirmService {
    * Creates an instance of public confirm dialog service.
    * @param dialog [dialog]
    */
-  constructor(public dialog: MatDialog) {}
+  constructor(private dialog: MatDialog) {}
 
   /**
    * Loads confirm dialog
