@@ -1,0 +1,24 @@
+/* Mixins helpers functions */
+
+// Btn class mixin
+@mixin btn-class($color) {
+    color: $white;
+    background-color: $color;
+  
+    &:hover {
+      color: $white;
+      background-color: darken($color, 10%);
+    }
+}
+  
+// Outline btn mixin
+@mixin btn-outline-class($color) {
+    color: $color;
+    background-color: none;
+    border: 1px solid $color;
+
+    &:hover {
+        color: $white;
+        background-color: darken($color, 10%);
+    }
+}

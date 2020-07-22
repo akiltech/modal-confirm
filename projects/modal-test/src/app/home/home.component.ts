@@ -19,9 +19,9 @@ export class HomeComponent implements OnInit, OnDestroy {
   openDialog () {
     const dialogData: ConfirmInterface = {
       type: CONFIRMATION_TYPE.SUCCESS,
-      headerShown: false,
-      iconShown: false,
-      footerShown: false,
+      // headerShown: false,
+      // iconShown: false,
+      // footerShown: false,
       headerTitle: 'Header title',
       // iconName: 'zoom_out',
       bodyText: 'Body content',

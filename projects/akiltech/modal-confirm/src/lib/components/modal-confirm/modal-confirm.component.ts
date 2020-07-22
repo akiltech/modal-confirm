@@ -117,7 +117,7 @@ export class ModalConfirmComponent implements OnInit, OnDestroy, AfterViewChecke
     this.footerShown = data.footerShown;
     this.iconShown = data.iconShown;
     this.iconName = data.iconName;
-    this.bodyText = data.bodyText || `Cette action est irreversible, voulez vous continuer ?`;
+    this.bodyText = data.bodyText || `This action is irreversible, do you want to continue ?`;
     this.childComponent = data.childComponent;
     this.btnYes = data.btnYes;
     this.btnNo = data.btnNo;

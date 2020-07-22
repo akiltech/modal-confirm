@@ -1,93 +1,43 @@
 /* Custom buttons for current modal component */
 
+@import './mixins';
+
 // Success btn
 .btn-add-success {
-  color: $white;
-  background-color: $green;
-
-  &:hover {
-    color: $white;
-    background-color: darken($green, 10%);
-  }
+  @include btn-class($green);
 }
 
 // Success outline btn
 .btn-add-success-outline {
-  color: $green;
-  background-color: none;
-  border: 1px solid $green;
-
-  &:hover {
-    color: $white;
-    background-color: darken($green, 10%);
-  }
+  @include btn-outline-class($green);
 }
 
 // Danger btn
 .btn-add-danger {
-  color: $white;
-  background-color: $red;
-  
-  &:hover {
-    color: $white;
-    background-color: darken($red, 10%);
-  }
+  @include btn-class($red);
 }
 
 // Danger outline btn
 .btn-add-danger-outline {
-  color: $red;
-  background-color: none;
-  border: 1px solid $red;
-
-  &:hover {
-    color: $white;
-    background-color: darken($red, 10%);
-  }
+  @include btn-outline-class($red);
 }
 
 // Warning btn
 .btn-add-warning {
-  color: $white;
-  background-color: $warning;
-
-  &:hover {
-    color: $white;
-    background-color: darken($warning, 10%);
-  }
+  @include btn-class($warning);
 }
 
 // Warning outline btn
 .btn-add-warning-outline {
-  color: $warning;
-  background-color: none;
-  border: 1px solid $warning;
-
-  &:hover {
-    color: $white;
-    background-color: darken($warning, 10%);
-  }
+  @include btn-outline-class($warning);
 }
 
 // Default btn
 .btn-add-default {
-  color: $white;
-  background-color: $info;
-
-  &:hover {
-    color: $white;
-    background-color: darken($info, 10%);
-  }
+  @include btn-class($info);
 }
 
 // Warning outline btn
 .btn-add-default-outline {
-  color: $info;
-  background-color: none;
-  border: 1px solid $info;
-
-  &:hover {
-    color: $white;
-    background-color: darken($info, 10%);
-  }
+  @include btn-outline-class($info);
 }

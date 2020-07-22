@@ -19,20 +19,20 @@ export class AboutComponent implements OnInit, OnDestroy {
 
   openDialog () {
     const dialogData: ConfirmInterface = {
-      type: CONFIRMATION_TYPE.WARNING,
+      // type: CONFIRMATION_TYPE.WARNING,
       // headerShown: false,
       // iconShown: false,
       footerShown: false,
-      headerTitle: 'Header title',
+      // headerTitle: 'Header title',
       // iconName: 'zoom_out',
-      bodyText: 'Body content',
-      // childComponent: InjectedComponent,
-      btnYes: 'Oui',
-      btnNo: 'Non'
+      // bodyText: 'Body content',
+      childComponent: InjectedComponent,
+      // btnYes: 'Oui',
+      // btnNo: 'Non'
     };
  
     const dialogOptions: OptionsInterface = {
-        size: '800',
+        // size: '800',
         // disabledClose: true
     }
 
