@@ -14,16 +14,16 @@ $ npm install @akiltech/modal-confirm --save
 $ yarn add @akiltech/modal-confirm
 ```
 
-you must install these two libraries for the application to work properly `@angular/material` and `bootstrap@4.x`
+you must install these two libraries for the application to work properly `@angular/material@8.x` and `bootstrap@4.x`
 
-#### @angular/material
+#### @angular/material (must be lower than version 9)
 ```sh
-$ ng add @angular/material
+$ ng add @angular/material@8.x
 ```
 
 ##### Notice for `@angular/material` set up
 
-So that library work properly, you must install a version lower than version 9. for example `yarn add @angular/material@^8.x`
+So that library work properly, you must install a version lower than version 9. for example `ng add @angular/material@^8.2.3`
 
 #### BOOTSTRAP
 ```sh
