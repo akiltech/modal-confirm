@@ -14,6 +14,11 @@
           "options": {
             "tsConfig": "projects/akiltech/modal-confirm/tsconfig.lib.json",
             "project": "projects/akiltech/modal-confirm/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/akiltech/modal-confirm/tsconfig.lib.prod.json"
+            }
           }
         },
         "test": {
@@ -57,7 +62,7 @@
             "main": "projects/modal-test/src/main.ts",
             "polyfills": "projects/modal-test/src/polyfills.ts",
             "tsConfig": "projects/modal-test/tsconfig.app.json",
-            "aot": false,
+            "aot": true,
             "assets": [
               "projects/modal-test/src/favicon.ico",
               "projects/modal-test/src/assets"
@@ -81,7 +86,6 @@
               "sourceMap": false,
               "extractCss": true,
               "namedChunks": false,
-              "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
@@ -163,5 +167,8 @@
       }
     }
   },
-  "defaultProject": "modal-test"
+  "defaultProject": "modal-test",
+  "cli": {
+    "analytics": false
+  }
 }

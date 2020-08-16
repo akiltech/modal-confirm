@@ -4,7 +4,7 @@ Handle your modal dialog as you want without having to configure anything.
 
 ## Installation
 
-#### NPM
+#### NPM  (for @angular/material@9.x and higher)
 ```sh
 $ npm install @akiltech/modal-confirm --save
 ```
@@ -14,16 +14,22 @@ $ npm install @akiltech/modal-confirm --save
 $ yarn add @akiltech/modal-confirm
 ```
 
-you must install these two libraries for the application to work properly `@angular/material@8.x` and `bootstrap@4.x`
+#### NPM (for @angular/material@8.x and lower)
+```sh
+$ npm install @akiltech/modal-confirm@0.1.0 --save
+```
+
+#### YARN
+```sh
+$ yarn add @akiltech/modal-confirm@0.1.0
+```
+
+you must install these two libraries for the application to work properly `@angular/material` and `bootstrap@4.x`
 
 #### @angular/material (must be lower than version 9)
 ```sh
-$ ng add @angular/material@8.x
+$ ng add @angular/material
 ```
-
-##### Notice for `@angular/material` set up
-
-So that library work properly, you must install a version lower than version 9. for example `ng add @angular/material@^8.2.3`
 
 #### BOOTSTRAP
 ```sh

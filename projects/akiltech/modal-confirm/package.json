@@ -1,6 +1,6 @@
 {
   "name": "@akiltech/modal-confirm",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "peerDependencies": {
     "@angular/common": "^8.2.14",
     "@angular/core": "^8.2.14"
@@ -35,5 +35,8 @@
     "material dialog", 
     "reusable dialog",
     "customizable dialog"
-  ]
+  ],
+  "dependencies": {
+    "tslib": "^2.0.0"
+  }
 }

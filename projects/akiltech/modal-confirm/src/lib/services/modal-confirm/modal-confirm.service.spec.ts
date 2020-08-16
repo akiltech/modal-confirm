@@ -1,5 +1,5 @@
 import { TestBed } from '@angular/core/testing';
-import { MatDialogModule } from '@angular/material';
+import { MatDialogModule } from '@angular/material/dialog';
 
 import { ModalConfirmService } from './modal-confirm.service';
 import { ModalConfirmComponent } from '../../components/modal-confirm/modal-confirm.component';

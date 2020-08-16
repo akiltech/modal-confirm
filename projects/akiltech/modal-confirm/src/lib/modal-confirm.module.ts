@@ -7,7 +7,7 @@
 
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MatDialogModule } from '@angular/material';
+import { MatDialogModule } from '@angular/material/dialog';
 import { ComponentLoaderDirective } from './directives/component-loader/component-loader.directive';
 import { ModalConfirmComponent } from './components/modal-confirm/modal-confirm.component';
 

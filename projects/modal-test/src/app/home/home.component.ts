@@ -32,7 +32,7 @@ export class HomeComponent implements OnInit, OnDestroy {
  
     const dialogOptions: OptionsInterface = {
         // size: '800',
-        disabledClose: true
+        // disabledClose: true
     } 
       this.confirmService.openDialog(dialogData, dialogOptions).pipe(takeUntil(this.unsubscribe$)).subscribe(dialog => {
         if (dialog) {

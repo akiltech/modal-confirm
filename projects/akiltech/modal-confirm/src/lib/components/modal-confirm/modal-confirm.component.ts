@@ -18,7 +18,7 @@ import {
   OnDestroy,
   Type
 } from '@angular/core';
-import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material';
+import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { ConfirmInterface, CONFIRMATION_TYPE, Utils } from '../../models/confirm-dialog';
 import {
   ConfirmHeaderClass,
