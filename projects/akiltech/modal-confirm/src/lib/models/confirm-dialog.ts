@@ -28,6 +28,7 @@ export interface ConfirmInterface {
     iconShown?: boolean;
     iconName?: string;
     bodyText?: string;
+    data?: any;
     childComponent?: Type<any>;
     btnYes?: string;
     btnNo?: string;

@@ -105,6 +105,7 @@ The `openDialog` method allows you to open your modal dialog and you can pass or
 | `iconName` | `String` | none | Define a modal dialog icon name if you don't want default icon |
 | `bodyText` | `String` | none | Define a modal dialog body text |
 | `childComponent` | `Component` | none | You can decide to inject component in you modal dialog |
+| `data` | `any` | none | You can decide to pass datas to your incoming component |
 | `btnYes` | `String` | none | Define a text for your modal dialog confirm button |
 | `btnNo` | `String` | none | Define a text for your modal dialog cancel button |
 
@@ -165,6 +166,7 @@ export class AppComponent {
       iconName: 'your icon name', // if you don't want to use default icon
       bodyText: 'Here body text',
       childComponent: YourComponent, // if you want to inject component
+      data: { id: 1, title: 'data title' } // Example of data you can pass to your incoming component
       btnYes: 'Confirm btn label',
       btnNo: 'Cancel btn label'
   };
@@ -197,13 +199,23 @@ import { ModalConfirmModule } from '@akiltech/modal-confirm';
   declarations: [],
   imports: [ModalConfirmModule],
   providers: [],
-  entryComponents: [YourComponent],
+  entryComponents: [YourInjectedComponent],
   bootstrap: [],
 })
 export class AppModule { }
 ```
 
 - If you decide to inject component, you can't use `bodyText` parameter again.
+- If you want to pass data to your injected component. use the `@Input` decorator to get the data conten.
+
+```typescript
+@Component()
+export class YourInjectedComponent {
+
+  // Gets incoming data
+  @Input() data: any;
+}
+```
 
 ### See demo
 

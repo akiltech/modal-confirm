@@ -19,20 +19,21 @@ export class HomeComponent implements OnInit, OnDestroy {
   openDialog () {
     const dialogData: ConfirmInterface = {
       type: CONFIRMATION_TYPE.SUCCESS,
-      // headerShown: false,
-      // iconShown: false,
-      // footerShown: false,
-      headerTitle: 'Header title',
+      headerShown: false,
+      iconShown: false,
+      footerShown: false,
+      // headerTitle: 'Header title',
       // iconName: 'zoom_out',
-      bodyText: 'Body content',
+      // bodyText: 'Body content',
+      data: { id: 1, title: 'data title', content: 'datas content' },
       childComponent: InjectedComponent,
-      btnYes: 'Oui',
-      btnNo: 'Non'
+      // btnYes: 'Oui',
+      // btnNo: 'Non'
     };
  
     const dialogOptions: OptionsInterface = {
         // size: '800',
-        // disabledClose: true
+        disabledClose: true
     } 
       this.confirmService.openDialog(dialogData, dialogOptions).pipe(takeUntil(this.unsubscribe$)).subscribe(dialog => {
         if (dialog) {

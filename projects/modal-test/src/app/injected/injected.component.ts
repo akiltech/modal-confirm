@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { ModalConfirmService } from '@akiltech/modal-confirm';
 
 @Component({
@@ -8,12 +8,15 @@ import { ModalConfirmService } from '@akiltech/modal-confirm';
 })
 export class InjectedComponent implements OnInit {
 
+  @Input() data: any;
+
   constructor(private dialogService: ModalConfirmService) { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    console.log('[Incoming data] ', this.data);
+  }
 
   closeDialog() {
     this.dialogService.closeAllDialog();
   }
-
 }

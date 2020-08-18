@@ -84,6 +84,11 @@ export class ModalConfirmComponent implements OnInit, OnDestroy, AfterViewChecke
   btnNo: string;
 
   /**
+   * Data  of modal confirm component
+   */
+  data: any;
+
+  /**
    * Component ref of modal confirm component
    */
   componentRef: ComponentRef<any>;
@@ -107,20 +112,21 @@ export class ModalConfirmComponent implements OnInit, OnDestroy, AfterViewChecke
    */
   constructor(
     public dialogRef: MatDialogRef<ModalConfirmComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: ConfirmInterface,
+    @Inject(MAT_DIALOG_DATA) public input: ConfirmInterface,
     private componentFactoryResolver: ComponentFactoryResolver,
     private cd: ChangeDetectorRef
   ) {
-    this.type = data.type || CONFIRMATION_TYPE.DEFAULT;
-    this.headerTitle = data.headerTitle;
-    this.headerShown = data.headerShown;
-    this.footerShown = data.footerShown;
-    this.iconShown = data.iconShown;
-    this.iconName = data.iconName;
-    this.bodyText = data.bodyText || `This action is irreversible, do you want to continue ?`;
-    this.childComponent = data.childComponent;
-    this.btnYes = data.btnYes;
-    this.btnNo = data.btnNo;
+    this.type = input.type || CONFIRMATION_TYPE.DEFAULT;
+    this.headerTitle = input.headerTitle;
+    this.headerShown = input.headerShown;
+    this.footerShown = input.footerShown;
+    this.iconShown = input.iconShown;
+    this.iconName = input.iconName;
+    this.bodyText = input.bodyText || `This action is irreversible, do you want to continue ?`;
+    this.data = input.data;
+    this.childComponent = input.childComponent;
+    this.btnYes = input.btnYes;
+    this.btnNo = input.btnNo;
   }
 
   /**
@@ -267,6 +273,7 @@ export class ModalConfirmComponent implements OnInit, OnDestroy, AfterViewChecke
     viewContainerRef.clear();
 
     this.componentRef = viewContainerRef.createComponent(componentFactory);
+    if (this.data) { this.componentRef.instance.data = this.data; }
   }
 
   /**
